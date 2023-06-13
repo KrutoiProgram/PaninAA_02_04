@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaninAA_02_04.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="171"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="41"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Column="0" HeightRequest="70" WidthRequest="78" ></Image>
+        <Frame Grid.Row="0" Background="White">
+            <Label FontSize="36" FontAttributes="Bold" FontFamily="Roboto" TextColor="#83D96E" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Регистрация</Label>
+        </Frame>
+        <StackLayout Grid.Row="1" Background="#83D96E">
+            <Label Margin="30"  FontSize="14" TextColor="#000000" FontFamily="Roboto" >Введите ваш логин и пароль</Label>
+
+            <Entry Margin="30"  x:Name="Login_Entry" Placeholder="Логин"  PlaceholderColor="#000000" ></Entry>
+            <Entry Margin="30" x:Name="Password_Entry" Placeholder="Пароль"  PlaceholderColor="#000000" ></Entry>
+            <Button FontAttributes="Bold" Clicked="Click_RegButton" WidthRequest="300" BackgroundColor="#375F40" TextColor="White" FontSize="24" FontFamily="Roboto" Text="ВОЙТИ" CornerRadius="20" HeightRequest="70"></Button>
+        </StackLayout>
+        <Frame Grid.Row="2" Background="White">
+           
+        </Frame>
+    </Grid>
+
+</ContentPage>

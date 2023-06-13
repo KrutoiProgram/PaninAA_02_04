@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PaninAA_02_04.CalculatorPage">
+    <ContentPage.Content>
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="171"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="41"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Column="0" HeightRequest="70" WidthRequest="78" ></Image>
+        <Frame Grid.Row="0" Background="White">
+                <Label FontSize="25" FontAttributes="Bold" FontFamily="Roboto" TextColor="#000000" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Кредитный калькулятор</Label>
+        </Frame>
+        <StackLayout Grid.Row="1" Background="#83D96E">
+                <Frame Margin="30" BackgroundColor="White" BorderColor="Black" CornerRadius="10">
+                    <StackLayout>
+                        <Label FontSize="18" FontFamily="Roboto" FontAttributes="Bold" TextColor="#000000">Сколько вам нужно</Label>
+                        <Slider ThumbColor="#83D96E" MaximumTrackColor="Gray" MinimumTrackColor="Gray" Maximum="100000" Minimum="30000"></Slider>
+                        
+                </StackLayout>
+                </Frame>
+                <Frame  BackgroundColor="White" CornerRadius="15">
+                    <Entry WidthRequest="156" HeightRequest="35" Placeholder="Введите срок кредита"/>
+                </Frame>
+                <Button FontAttributes="Bold"  WidthRequest="300" BackgroundColor="#375F40" TextColor="White" FontSize="24" FontFamily="Roboto" Text="РАСЧИТАТЬ" CornerRadius="20" HeightRequest="70"></Button>
+            
+            <Frame WidthRequest="160" HeightRequest="35" BackgroundColor="White" CornerRadius="15">
+                    <Entry  WidthRequest="156" HeightRequest="35"  Placeholder="ежемесячный платёж"/>
+                </Frame>
+            </StackLayout>
+        <Frame Grid.Row="2" Background="White">
+
+        </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
